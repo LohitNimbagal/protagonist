@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { BookOpen, CheckSquare, DollarSign, GraduationCap, Instagram, Star, Video, Youtube } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
 import templates from '@/data/all-templates.json'
 import AddonHoverCard from "@/components/addon-hover-card"
+import { ReadMoreDialog } from "@/components/read-more"
 
 const cardInfo = [
   {
@@ -84,12 +85,12 @@ export default function NotionTemplateLanding() {
                 </p>
                 <p className="text-base text-muted-foreground mb-6">
                   Protagonist Blueprint also includes (
-                  <span className="mx-1 text-[#438366] font-semibold hover:cursor-pointer">
-                    <AddonHoverCard>Academic Weapon</AddonHoverCard>
+                  <span className="mx-1 text-[#253d30] font-semibold hover:cursor-pointer">
+                    <AddonHoverCard template={templates[2]}>Academic Weapon</AddonHoverCard>
                   </span>
                   +
-                  <span className="mx-1 text-[#438366] font-semibold hover:cursor-pointer">
-                    <AddonHoverCard>Content brain</AddonHoverCard>
+                  <span className="mx-1 text-[#253d30] font-semibold hover:cursor-pointer">
+                    <AddonHoverCard template={templates[1]}>Content brain</AddonHoverCard>
                   </span>
                   ) templates worth of ₹1,100/- for free!
                 </p>
@@ -98,13 +99,21 @@ export default function NotionTemplateLanding() {
                   <span className="text-3xl font-bold text-primary">₹849</span>
                   <span className="text-sm text-muted-foreground line-through">₹1,950</span>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-4">
+                {/* <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" className="w-full sm:w-auto bg-[#253d30]">
                     Buy Now
                   </Button>
                   <Button variant="outline" size="lg" className="w-full sm:w-auto">
                     Read More
                   </Button>
+                </div> */}
+                <div className="md:w-96 flex flex-col sm:flex-row gap-4">
+                  <Link href={templates[0].cta} className="w-full" target="_blank">
+                    <Button size="" className="w-full sm:w-full bg-[#253d30] order-2 md:order-1">
+                      Buy Now
+                    </Button>
+                  </Link>
+                  <ReadMoreDialog template={templates[0]} />
                 </div>
               </div>
             </div>
@@ -172,7 +181,10 @@ export default function NotionTemplateLanding() {
             </div>
 
             <h3 className="text-lg md:text-3xl font-semibold md:tracking-tight">
-              I use Notion to do all this, it&apos;s an incredible tool but haunting to start from scratch. <br /> That&apos;s why I&apos;ve made this collection of my favourite templates that quite literally run my life.
+              I use Notion to do all this, it&apos;s an incredible tool but haunting to start from scratch.
+            </h3>
+            <h3 className="text-lg md:text-3xl font-bold md:tracking-tight">
+              That&apos;s why I&apos;ve made this collection of my favourite templates that quite literally run my life.
             </h3>
           </div>
         </section>
@@ -186,27 +198,32 @@ export default function NotionTemplateLanding() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {templates.map((template) => (
-                <Card key={template.slug}>
-                  <CardHeader>
-                    <CardTitle>{template.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
+              {templates.map((item) => (
+                <Card className='max-w-lg flex flex-col justify-between' key={item.slug} >
+                  <CardHeader className="space-y-4">
                     <Image
-                      src={template.imageUrl}
-                      alt={template}
-                      width={300}
-                      height={200}
-                      className="rounded-md object-cover w-full h-auto mb-4"
+                      src={item.imageUrl}
+                      alt={`Template ${item.title}`}
+                      width={400}
+                      height={300}
+                      className="w-auto lg:h-64 object-contain"
                     />
-                    <p className="text-sm text-muted-foreground mb-4">
-                      {template.shortDescription}
-                    </p>
-                    <div className="flex items-center justify-between gap-3">
-                      <Button className="w-full">Buy Now</Button>
-                      <Button variant="outline" className="w-full">Learn More</Button>
-                    </div>
-                  </CardContent>
+                    <CardTitle className='w-full flex items-center justify-between text-xl font-bold'>
+                      {item.title}
+                      <span className="text-lg font-semibold">{item.price ? `${item.price}` : 'Free'}</span>
+                    </CardTitle>
+                    <CardDescription>
+                      {item.shortDescription}
+                    </CardDescription>
+                  </CardHeader>
+
+                  <CardFooter className="mt-auto gap-2 flex items-center justify-between">
+                    <Link href={item.cta} className='w-full'>
+                      <Button className="w-full">{item.price ? 'Buy Now' : 'Free Access'}</Button>
+                    </Link>
+                    {/* <Button className="w-full">{item.price ? 'Buy Now' : 'Free Access'}</Button> */}
+                    <ReadMoreDialog template={item} />
+                  </CardFooter>
                 </Card>
               ))}
             </div>
