@@ -8,6 +8,7 @@ import Link from "next/link"
 import templates from '@/data/all-templates.json'
 import AddonHoverCard from "@/components/addon-hover-card"
 import { ReadMoreDialog } from "@/components/read-more"
+import ReviewsSection from "@/components/reviews-comp"
 
 const cardInfo = [
   {
@@ -49,6 +50,7 @@ const stats = [
     area: 'IIT Hyderabad',
   },
 ]
+
 
 export default function NotionTemplateLanding() {
 
@@ -215,30 +217,9 @@ export default function NotionTemplateLanding() {
           </div>
         </section>
 
-        <section id="reviews" className="w-full bg-gray-50 flex items-center justify-center py-12">
-          <div className="container mx-auto px-4 space-y-14 max-w-7xl">
-            <h2 className="text-3xl font-bold text-center mb-8">See What Our Protagonist Gang Says</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pb-2">
-              {[
-                { name: 'Alex', comment: 'Exactly what I was trying to do on my own but it was taking me hours, found this template and it&apos;s exactly the style I love. Nice work!' },
-                { name: 'Sam', comment: 'It made my work significantly easier :)”' },
-                { name: 'Jordan', comment: 'Everything I need in one place! This life planner template saved me alot of head ache trying to figure out notion. I am so glad I found this shop.' }
-              ].map((review, index) => (
-                <Card key={index}>
-                  <CardContent className="pt-6">
-                    <div className="flex items-center mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                      ))}
-                    </div>
-                    <p className="text-muted-foreground mb-2">&quot;{review.comment}&quot;</p>
-                    {/* <p className="font-semibold">- {review.name}</p> */}
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
+        
+
+        <ReviewsSection />
 
         <section className="w-full py-12">
           <div className="container mx-auto px-4 text-center flex flex-col items-center justify-center gap-4">
