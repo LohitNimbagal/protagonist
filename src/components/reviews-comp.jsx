@@ -112,11 +112,12 @@ export default function ReviewsSection() {
                 <h2 className="text-3xl font-bold text-center mb-8">See What Our Protagonist Gang Says</h2>
                 <div className="relative">
                     {/* Left scroll button */}
+
                     {canScrollLeft && (
                         <Button
                             variant="icon"
                             onClick={scrollLeft}
-                            className="absolute -left-12 top-1/2 transform -translate-y-1/2"
+                            className="absolute -left-12 top-1/2 transform -translate-y-1/2 hidden lg:block"
                         >
                             <ChevronLeft />
                         </Button>
@@ -157,7 +158,7 @@ export default function ReviewsSection() {
                         <Button
                             onClick={scrollRight}
                             variant="icon"
-                            className="absolute -right-12 top-1/2 transform -translate-y-1/2"
+                            className="absolute -right-12 top-1/2 transform -translate-y-1/2 hidden lg:block"
                         >
                             <ChevronRight />
                         </Button>
