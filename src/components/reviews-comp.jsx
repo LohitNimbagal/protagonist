@@ -5,7 +5,6 @@ import { Card, CardContent } from './ui/card';
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
 import { Button } from './ui/button';
 
-
 const reviews = [
     {
         name: "Pramooth",
@@ -17,7 +16,7 @@ const reviews = [
         name: "Shyam Bamrotiya",
         initials: "SB",
         comment: "I really liked it! It was well-organized, easy to use, visually appealing. It helped me get a better overview of my tasks, plan my week more effectively, and track my progress. Also helps with my finances.",
-        rating: 5
+        rating: 4
     },
     {
         name: "Krishna Yadav",
@@ -29,19 +28,19 @@ const reviews = [
         name: "Sauman Raaj",
         initials: "SR",
         comment: "Ya, it is good. I use it daily nowadays.",
-        rating: 4
+        rating: 5
     },
     {
         name: "Aravindan",
         initials: "A",
         comment: "It helped me plan my daily routine well. I was completely new to Notion and didn't understand most of it. Then I saw your YouTube video and purchased the Notion template. It is really an awesome template.",
-        rating: 5
+        rating: 4
     },
     {
         name: "Shubham Khakha",
         initials: "SK",
         comment: "I liked it because it contains everything in one place, so I don't have to switch tabs or apps while navigating through various aspects of my life.",
-        rating: 5
+        rating: 4
     },
     {
         name: "Kanav Singh",
@@ -59,7 +58,13 @@ const reviews = [
         name: "Shubhayu Majumdar",
         initials: "SM",
         comment: "Loved the template. I look forward to learning more about it and adding custom changes best for my use.",
-        rating: 5
+        rating: 4
+    },
+    {
+        name: "Mohit Maddala",
+        initials: "MM",
+        comment: "I've been loving the product and have been using it since the day I bought. It is a better purchase.",
+        rating: 4
     }
 ];
 

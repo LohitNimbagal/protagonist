@@ -79,7 +79,7 @@ export default function NotionTemplateLanding() {
               </div>
               <div className="w-full lg:w-1/2 p-4 md:p-8 flex flex-col justify-center">
                 <Badge variant="secondary" className="mb-2 self-start text-[#2a4135]">Special Offer</Badge>
-                <h2 className="text-2xl md:text-4xl md:leading-[3rem] font-bold mb-4">
+                <h2 className="text-2xl md:text-4xl md:leading-[3rem] font-bold mb-4 tracking-tight">
                   <span className="block">The Ultimate Notion Template to</span>
                   <span className="bg-[#253d30] py-1 px-1 text-white">Run Your Life Like a PRO</span>
                 </h2>
@@ -216,8 +216,6 @@ export default function NotionTemplateLanding() {
             </div>
           </div>
         </section>
-
-        
 
         <ReviewsSection />
 
