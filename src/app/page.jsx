@@ -135,7 +135,7 @@ export default function NotionTemplateLanding() {
             </div>
 
             <div className="space-y-8">
-              <h3 className="text-lg md:text-3xl font-bold">
+              <h3 className="text-xl md:text-3xl font-bold">
                 Hey, I am Sankho,
                 <br />
                 <span className="font-semibold">
@@ -143,7 +143,7 @@ export default function NotionTemplateLanding() {
                 </span>
                 <br />
               </h3>
-              <h3 className="text-lg md:text-3xl font-bold">
+              <h3 className="text-xl md:text-3xl font-bold">
                 It comes from being able to track, measure and organise all the stats of my life.
               </h3>
             </div>
@@ -163,7 +163,7 @@ export default function NotionTemplateLanding() {
               }
             </div>
 
-            <div className="space-y-8 text-lg md:text-3xl">
+            <div className="space-y-8 text-xl md:text-3xl">
               <h3 className=" font-semibold">
                 I use Notion to do all this, it&apos;s an incredible tool but haunting to start from scratch.
               </h3>
