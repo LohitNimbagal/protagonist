@@ -16,7 +16,7 @@ export const metadata = {
     url: 'www.protagonistsyndrome.com',
     images: [
       {
-        url: '/public/images/protagonist_blueprint_thumb.png',
+        url: '/images/protagonist_blueprint_thumb.png',
         width: 1200,
         height: 630,
       },
