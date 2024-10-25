@@ -13,10 +13,10 @@ export const metadata = {
   title: "Protagonist Syndrome",
   openGraph: {
     title: 'Protagonist Syndrome',
-    url: 'www.protagonistsyndrome.com',
+    url: 'protagonistsyndrome.com',
     images: [
       {
-        url: '/images/protagonist_blueprint_thumb.png',
+        url: 'https://d2oi1rqwb0pj00.cloudfront.net/product/nio_1722083668348_100.webp',
         width: 1200,
         height: 630,
       },
