@@ -1,26 +1,9 @@
 import { Button } from "@/components/ui/button"
-import {
-    Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogFooter,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-} from "@/components/ui/dialog"
-import { ArrowRight, ChevronLeft } from "lucide-react"
 import Image from "next/image"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card"
 import Link from "next/link"
 import {
     Credenza,
-    CredenzaBody,
-    CredenzaClose,
     CredenzaContent,
-    CredenzaDescription,
-    CredenzaFooter,
-    CredenzaHeader,
-    CredenzaTitle,
     CredenzaTrigger,
 } from "@/components/ui/credenza"
 
@@ -49,7 +32,6 @@ export function ReadMoreDialog({ template }) {
                         <Link href={template.cta} className="w-full">
                             <Button className="w-full mt-4">
                                 {template.price ? 'Buy Now' : 'Free Access'}
-                                {/* <ArrowRight className="ml-2 h-4 w-4" /> */}
                             </Button>
                         </Link>
                     </div>

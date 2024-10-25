@@ -1,24 +1,15 @@
 import { Mail } from 'lucide-react'
-import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
     return (
-        <footer className=" py-8">
-            <div className="container mx-auto px-4">
-                <div className="flex flex-col md:flex-row justify-between items-center">
-                    <div className="mb-4 md:mb-0">
-                        <Link href="/" className="text-xl font-semibold">NotionTemplates</Link>
-                        <p className="text-sm text-muted-foreground">© 2023 NotionTemplates. All rights reserved.</p>
-                    </div>
-                    <nav>
-                        <ul className="flex space-x-4">
-                            <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Privacy Policy</Link></li>
-                            <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Terms of Service</Link></li>
-                            <li><Link href="#contact" className="text-sm text-muted-foreground hover:text-foreground">Contact</Link></li>
-                        </ul>
-                    </nav>
-                </div>
+        <footer id='contact' className="w-full py-4 px-4 sm:px-6 lg:px-8 bg-gray-100">
+            <div className="container mx-auto text-center space-y-2">
+                <p className='flex items-center justify-center gap-3'>
+                    <Mail className='w-4 h-4' />
+                    protagonists.hq@gmail.com
+                </p>
+                <p>&copy; {new Date().getFullYear()} protagonistsyndrome. All rights reserved.</p>
             </div>
         </footer>
     )
