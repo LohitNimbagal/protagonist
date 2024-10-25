@@ -113,7 +113,7 @@ export default function NotionTemplateLanding() {
           </div>
         </section>
 
-        <section id="about" className="w-full bg-gray-100 flex flex-col items-center justify-center py-12">
+        <section id="about" className="w-full bg-gray-50 flex flex-col items-center justify-center py-12">
 
           <div className="container mx-auto px-4 space-y-14 max-w-4xl text-center">
             <Image
@@ -215,7 +215,7 @@ export default function NotionTemplateLanding() {
           </div>
         </section>
 
-        <section id="reviews" className="w-full bg-gray-100 flex items-center justify-center py-12">
+        <section id="reviews" className="w-full bg-gray-50 flex items-center justify-center py-12">
           <div className="container mx-auto px-4 space-y-14 max-w-7xl">
             <h2 className="text-3xl font-bold text-center mb-8">See What Our Protagonist Gang Says</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pb-2">
