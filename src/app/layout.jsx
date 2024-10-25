@@ -10,8 +10,21 @@ const fontSans = FontSans({
 })
 
 export const metadata = {
-  title: "Protagonist HQ",
+  title: "Protagonist Syndrome",
+  openGraph: {
+    title: 'Protagonist Syndrome',
+    url: 'www.protagonistsyndrome.com',
+    images: [
+      {
+        url: '/public/images/protagonist_blueprint_thumb.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: 'website',
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (
