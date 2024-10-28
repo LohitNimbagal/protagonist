@@ -132,22 +132,22 @@ export default function NotionTemplateLanding() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
               <div className="text-center">
                 <Users className="w-8 h-8 md:w-12 md:h-12 mx-auto mb-4 text-[#253d30]" />
-                <p className="text-2xl font-bold text-[#253d30] ">100K+</p>
+                <p className="text-2xl font-bold text-[#253d30] ">29K+</p>
                 <p className="text-gray-900">Instagram Followers</p>
               </div>
               <div className="text-center">
                 <Users className="w-8 h-8 md:w-12 md:h-12 mx-auto mb-4 text-[#253d30]" />
-                <p className="text-2xl font-bold text-[#253d30] ">500K+</p>
+                <p className="text-2xl font-bold text-[#253d30] ">176K+</p>
                 <p className="text-gray-900">YouTube Subscribers</p>
               </div>
               <div className="text-center">
                 <VideoIcon className="w-8 h-8 md:w-12 md:h-12 mx-auto mb-4 text-[#253d30]" />
-                <p className="text-2xl font-bold text-[#253d30] ">1000+</p>
+                <p className="text-2xl font-bold text-[#253d30] ">130+</p>
                 <p className="text-gray-900">YouTube Videos</p>
               </div>
               <div className="text-center">
                 <Eye className="w-8 h-8 md:w-12 md:h-12 mx-auto mb-4 text-[#253d30]" />
-                <p className="text-2xl font-bold text-[#253d30] ">50M+</p>
+                <p className="text-2xl font-bold text-[#253d30] ">10M+</p>
                 <p className="text-gray-900">Total Views</p>
               </div>
             </div>
