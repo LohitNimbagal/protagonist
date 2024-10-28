@@ -7,6 +7,24 @@ import { Button } from './ui/button';
 
 const reviews = [
     {
+        name: "Kanav Singh",
+        initials: "KS",
+        comment: "Really loved the template. It helped me to organize my life; before, it was all cluttered.",
+        rating: 5
+    },
+    {
+        name: "Sauman Raaj",
+        initials: "SR",
+        comment: "Ya, it is good. I use it daily nowadays.",
+        rating: 5
+    },
+    {
+        name: "Anirban Maity",
+        initials: "AM",
+        comment: "One thing I can say about the template is that it has helped me to focus better on my work and organize my day easily.",
+        rating: 5
+    },
+    {
         name: "Pramooth",
         initials: "P",
         comment: "Certainly I'm someone focusing more on how to be productive rather than just being proactive. I have tried N no of things but wasn't able to figure out something that can really be added to the routine. Like I was working towards creating something that can put me on track but always lost in the path, but finally yours was that something I was constantly looking for. I'm slowly adapting to using it and I could see a bit more productivity in me which itself is a great deal for me. The reason I can't give 5 is so simple that I'm a newbie to the notion and using it to the maximum benefit. Hope I can figure it out in the time being. Basically thanks for making my life a bit better.",
@@ -25,12 +43,6 @@ const reviews = [
         rating: 4
     },
     {
-        name: "Sauman Raaj",
-        initials: "SR",
-        comment: "Ya, it is good. I use it daily nowadays.",
-        rating: 5
-    },
-    {
         name: "Aravindan",
         initials: "A",
         comment: "It helped me plan my daily routine well. I was completely new to Notion and didn't understand most of it. Then I saw your YouTube video and purchased the Notion template. It is really an awesome template.",
@@ -42,18 +54,7 @@ const reviews = [
         comment: "I liked it because it contains everything in one place, so I don't have to switch tabs or apps while navigating through various aspects of my life.",
         rating: 4
     },
-    {
-        name: "Kanav Singh",
-        initials: "KS",
-        comment: "Really loved the template. It helped me to organize my life; before, it was all cluttered.",
-        rating: 5
-    },
-    {
-        name: "Anirban Maity",
-        initials: "AM",
-        comment: "One thing I can say about the template is that it has helped me to focus better on my work and organize my day easily.",
-        rating: 5
-    },
+
     {
         name: "Shubhayu Majumdar",
         initials: "SM",
@@ -69,7 +70,7 @@ const reviews = [
 ];
 
 export default function ReviewsSection() {
-    
+
     const scrollContainer = useRef(null);
     const [canScrollLeft, setCanScrollLeft] = useState(false);
     const [canScrollRight, setCanScrollRight] = useState(true);
@@ -152,7 +153,7 @@ export default function ReviewsSection() {
                                         <p className="ml-3 font-semibold text-[#253d30]">{review.name}</p>
                                     </div>
                                     <p className="text-gray-800 mb-2">
-                                        &quot;{review.comment.length > 100 ? `${review.comment.substring(0, 100)}...` : review.comment}&quot;
+                                        &quot;{review.comment.length > 120 ? `${review.comment.substring(0, 100)}...` : review.comment}&quot;
                                     </p>
                                 </CardContent>
                             </Card>

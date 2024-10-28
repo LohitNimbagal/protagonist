@@ -30,7 +30,11 @@ export function ReadMoreDialog({ template }) {
                     <div className="p-2 md:p-6 pt-2 space-y-4 flex flex-col justify-start">
                         <div className="flex items-center justify-between flex-wrap">
                             <h3 className="text-2xl font-bold text-[#253d30]">{template.title}</h3>
-                            <p className="text-xl font-bold text-[#253d30]">{template.price}</p>
+                            <div className="flex items-center gap-2">
+                                <span className="text-sm text-muted-foreground font-normal line-through">{template.originalPrice ? `${template.originalPrice}` : null}</span>
+                                <span className="text-lg font-semibold">{template.price ? `${template.price}` : 'Free'}</span>
+                            </div>
+                            {/* <p className="text-xl font-bold text-[#253d30]">{template.price}</p> */}
                         </div>
                         {template.description.map(item => (
                             <p className="text-gray-800" key={item}>

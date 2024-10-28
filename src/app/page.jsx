@@ -184,7 +184,10 @@ export default function NotionTemplateLanding() {
                     />
                     <CardTitle className='w-full flex items-center justify-between text-xl font-bold text-[#253d30]'>
                       {item.title}
-                      <span className="text-lg  font-semibold">{item.price ? `${item.price}` : 'Free'}</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm text-muted-foreground font-normal line-through">{item.originalPrice ? `${item.originalPrice}` : null}</span>
+                        <span className="text-lg font-semibold">{item.price ? `${item.price}` : 'Free'}</span>
+                      </div>
                     </CardTitle>
                     <CardDescription className='text-gray-800'>
                       {item.shortDescription}
