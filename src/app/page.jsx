@@ -55,8 +55,7 @@ export default function NotionTemplateLanding() {
 
   return (
     <div className="flex items-center justify-center">
-
-      <main className="w-full min-h-screen flex flex-col items-center justify-center spacey-10 lg:space-y-16">
+      <main className="w-full min-h-screen flex flex-col items-center justify-center ">
 
         <section id="hero" className="items-center justify-center bg-white py-12">
 
@@ -119,8 +118,8 @@ export default function NotionTemplateLanding() {
 
         </section>
 
-        <section className="flex flex-col items-center justify-start py-12 w-full bg-gray-100">
-          <div className="container mx-auto px-4 space-y-20 max-w-4xl">
+        <section id='about' className="flex flex-col items-center justify-start py-12 w-full bg-gray-100">
+          <div className="container mx-auto px-4 space-y-10 md:space-y-20 max-w-4xl">
 
             <Image
               src={"https://rowan-donut-ffc.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F170a0660-4ab7-4462-a6bc-d2ab83238013%2Fe3796402-4146-4c2a-9ca0-19de0c6217c6%2FScreenshot_2024-10-18_at_9.08.09_AM.png?table=block&id=1231975d-b166-8032-b472-dddf9c7ea40e&spaceId=170a0660-4ab7-4462-a6bc-d2ab83238013&width=1420&userId=&cache=v2"}
@@ -132,26 +131,27 @@ export default function NotionTemplateLanding() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
               <div className="text-center">
-                <Users className="w-12 h-12 mx-auto mb-4 text-[#253d30]" />
+                <Users className="w-8 h-8 md:w-12 md:h-12 mx-auto mb-4 text-[#253d30]" />
                 <p className="text-2xl font-bold text-[#253d30] ">100K+</p>
                 <p className="text-gray-900">Instagram Followers</p>
               </div>
               <div className="text-center">
-                <Users className="w-12 h-12 mx-auto mb-4 text-[#253d30]" />
+                <Users className="w-8 h-8 md:w-12 md:h-12 mx-auto mb-4 text-[#253d30]" />
                 <p className="text-2xl font-bold text-[#253d30] ">500K+</p>
                 <p className="text-gray-900">YouTube Subscribers</p>
               </div>
               <div className="text-center">
-                <VideoIcon className="w-12 h-12 mx-auto mb-4 text-[#253d30]" />
+                <VideoIcon className="w-8 h-8 md:w-12 md:h-12 mx-auto mb-4 text-[#253d30]" />
                 <p className="text-2xl font-bold text-[#253d30] ">1000+</p>
                 <p className="text-gray-900">YouTube Videos</p>
               </div>
               <div className="text-center">
-                <Eye className="w-12 h-12 mx-auto mb-4 text-[#253d30]" />
+                <Eye className="w-8 h-8 md:w-12 md:h-12 mx-auto mb-4 text-[#253d30]" />
                 <p className="text-2xl font-bold text-[#253d30] ">50M+</p>
                 <p className="text-gray-900">Total Views</p>
               </div>
             </div>
+
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-lg mb-6">
                 <span className="font-bold text-[#253d30] font-lato">Hey, I&apos;m Sankho!</span> Let me share a secret that&apos;s been key to my success. It&apos;s all about tracking, measuring, and organizing the key stats of my life. I do it all with Notion, an incredible tool — but I know it can be daunting to set up from scratch.
@@ -205,7 +205,7 @@ export default function NotionTemplateLanding() {
 
         <ReviewsSection />
 
-        <section className="w-full py-2 pb-16">
+        <section className="w-full py-12">
           <div className="container mx-auto px-4 text-center flex flex-col items-center justify-center gap-4">
             <h2 className="text-3xl font-semibold mb-4 font-poppins">Ready to Take Control of Your Story ?</h2>
             <Link href={'#hero'}>
