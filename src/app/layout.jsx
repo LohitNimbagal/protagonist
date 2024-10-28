@@ -1,4 +1,4 @@
-import { Inter as FontSans } from "next/font/google";
+import { Inter as FontSans, Lato, Poppins } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from '@/components/header'
@@ -8,6 +8,20 @@ const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 })
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ['100', '200', '300', '400', '500', '600', '700'],
+  variable: "--poppins",
+})
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ['100', '300', '400', '700', '900'],
+  variable: "--lato",
+})
+
+
 
 export const metadata = {
   title: "Protagonist Syndrome",
@@ -30,8 +44,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={cn(
-        "font-sans antialiased",
-        fontSans.variable
+        "font-sans antialiased poppins",
+        fontSans.variable, poppins.variable, lato.variable
       )}>
         <Header />
         {children}

@@ -113,9 +113,9 @@ export default function ReviewsSection() {
     }, []);
 
     return (
-        <section id="reviews" className="w-full bg-gray-50 flex items-center justify-center py-12">
+        <section id="reviews" className="w-full bg-gray-100 flex items-center justify-center py-12">
             <div className="container mx-auto px-4 space-y-14 max-w-7xl">
-                <h2 className="text-3xl font-bold text-center mb-8">See What Our Protagonist Gang Says</h2>
+                <h2 className="text-3xl font-semibold text-center mb-8 font-poppins">See What Our Protagonist Gang Says</h2>
                 <div className="relative">
                     {/* Left scroll button */}
 
@@ -141,17 +141,17 @@ export default function ReviewsSection() {
                                         {[...Array(5)].map((_, i) => (
                                             <Star
                                                 key={i}
-                                                className={`w-5 h-5 ${i < review.rating ? "fill-primary text-primary" : "text-gray-300"}`}
+                                                className={`w-5 h-5 ${i < review.rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}`}
                                             />
                                         ))}
                                     </div>
                                     <div className="flex items-center mb-4">
-                                        <div className="w-10 h-10 bg-gray-200 text-primary flex items-center justify-center rounded-full font-semibold">
+                                        <div className="w-10 h-10 bg-gray-200 text-[#253d30] flex items-center justify-center rounded-full font-semibold">
                                             {review.initials}
                                         </div>
-                                        <p className="ml-3 font-semibold text-gray-800">{review.name}</p>
+                                        <p className="ml-3 font-semibold text-[#253d30]">{review.name}</p>
                                     </div>
-                                    <p className="text-muted-foreground mb-2">
+                                    <p className="text-gray-800 mb-2">
                                         &quot;{review.comment.length > 100 ? `${review.comment.substring(0, 100)}...` : review.comment}&quot;
                                     </p>
                                 </CardContent>

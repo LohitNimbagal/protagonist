@@ -14,6 +14,8 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ["var(--font-sans)", ...fontFamily.sans],
+				poppins: ["var(--poppins)"],
+				lato: ["var(--lato)"],
 			},
 			colors: {
 				background: 'hsl(var(--background))',
