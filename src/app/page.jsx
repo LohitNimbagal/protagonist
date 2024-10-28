@@ -122,11 +122,11 @@ export default function NotionTemplateLanding() {
           <div className="container mx-auto px-4 space-y-10 md:space-y-20 max-w-4xl">
 
             <Image
-              src={"https://rowan-donut-ffc.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F170a0660-4ab7-4462-a6bc-d2ab83238013%2Fe3796402-4146-4c2a-9ca0-19de0c6217c6%2FScreenshot_2024-10-18_at_9.08.09_AM.png?table=block&id=1231975d-b166-8032-b472-dddf9c7ea40e&spaceId=170a0660-4ab7-4462-a6bc-d2ab83238013&width=1420&userId=&cache=v2"}
+              src="/images/about.png"
               alt="Creator Journey"
               width={800}
-              height={1000}
-              className="rounded-lg object-cover w-full h-auto"
+              height={600}
+              className="rounded-lg object-cover w-full h-96"
             />
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">

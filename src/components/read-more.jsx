@@ -27,14 +27,16 @@ export function ReadMoreDialog({ template }) {
                     />
                 </CredenzaHeader>
                 <CredenzaBody>
-                    <div className="p-6 pt-2 space-y-4 flex flex-col justify-start">
-                        <div className="flex items-center justify-between">
+                    <div className="p-2 md:p-6 pt-2 space-y-4 flex flex-col justify-start">
+                        <div className="flex items-center justify-between flex-wrap">
                             <h3 className="text-2xl font-bold text-[#253d30]">{template.title}</h3>
-                            <p className="text-xl font-semibold text-primary text-[#253d30]">{template.price}</p>
+                            <p className="text-xl font-bold text-[#253d30]">{template.price}</p>
                         </div>
-                        <p className="text-gray-800">
-                            {template.description}
-                        </p>
+                        {template.description.map(item => (
+                            <p className="text-gray-800" key={item}>
+                                {item}
+                            </p>
+                        ))}
                         <Link href={template.cta} className="w-full">
                             <Button className="w-full mt-4">
                                 {template.price ? 'Buy Now' : 'Free Access'}

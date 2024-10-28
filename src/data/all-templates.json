@@ -5,7 +5,10 @@
         "shortDescription": "Become the Main Character of your Life within 180 Days.",
         "imageUrl": "/images/protagonist_blueprint_thumb.png",
         "cta": "https://nas.io/checkout-global?communityId=668fc923efa0d245b6036dcf&communityCode=PROTAGONISTS&requestor=signupRequestor&sourceInfoType=folder&sourceInfoOrigin=66a4e0f6219e053f42cfff08",
-        "description": "We've all been there, missed deadlines, an assignment date we've forgotten about, and savings for that new iPhone that never happened. I know because I've been there and that's why I built the Protagonist Blueprint. This Notion Template won't let you fall behind in your academics, side hustles, finances, or health. Without it, you risk missing opportunities, staying disorganized, and losing control over the most important areas of your life.",
+        "description": [
+            "We've all been there, missed deadlines, an assignment date we've forgotten about, and savings for that new iPhone that never happened. I know because I've been there and that's why I built the Protagonist Blueprint.",
+            "This Notion Template won't let you fall behind in your academics, side hustles, finances, or health. Without it, you risk missing opportunities, staying disorganized, and losing control over the most important areas of your life."
+        ],
         "price": "₹ 849"
     },
     {
@@ -13,8 +16,11 @@
         "slug": "content-brain",
         "shortDescription": "Think Freely, Create with Courage with the help of your Virtual Content Brain",
         "imageUrl": "/images/content_brain_thumb.png",
-        "cta": "https://nas.io/protagonists/products/mzxb",
-        "description": "Attention is the new oil and Content Creation is how you tap into it. But missed deadlines, scattered ideas, and disorganized workflows make it almost impossible to grow an audience. You have to be focused. Content Brain is the exact system I&apos,ve used to grow my online audience of over 200k followers. This template helps you manage every step &minus; pre-production, production, and post-production &minus; efficiently. Steal it.",
+        "cta": "https: //nas.io/protagonists/products/mzxb",
+        "description": [
+            "Attention is the new oil and Content Creation is how you tap into it. But missed deadlines, scattered ideas, and disorganized workflows make it almost impossible to grow an audience. You have to be focused.",
+            "Content Brain is the exact system I’ve used to grow my online audience of over 200k followers. This template helps you manage every step – pre-production, production, and post-production – efficiently. Steal it."
+        ],
         "price": "₹ 649"
     },
     {
@@ -23,7 +29,9 @@
         "shortDescription": "Ace your assignments, Crush your Tests and don't let academics worry you, Become an Academic Weapon",
         "imageUrl": "/images/academic_weapon_thumb.png",
         "cta": "https://nas.io/protagonists/products/aurb",
-        "description": "All in one Notion Template for a student to Manage Semesters, Courses, Assignments, Notes, Timetable, Exams Calendar and everything one can ask for.",
+        "description": [
+            "All in one Notion Template for a student to Manage Semesters, Courses, Assignments, Notes, Timetable, Exams Calendar and everything one can ask for."
+        ],
         "price": "₹ 449"
     },
     {
@@ -32,7 +40,9 @@
         "shortDescription": "Never miss an assignment deadline again!",
         "imageUrl": "/images/assignment_hq_thumb.png",
         "cta": "https://nas.io/protagonists/products/ebyt",
-        "description": "Very versatile and customizable Notion Template to track all your assignments and see them in different views.",
+        "description": [
+            "Very versatile and customizable Notion Template to track all your assignments and see them in different views."
+        ],
         "price": ""
     },
     {
@@ -41,7 +51,9 @@
         "shortDescription": "A one-shot content planner for Social Media!",
         "imageUrl": "/images/content_planner_thumb.jpg",
         "cta": "https://nas.io/protagonists/products/lgpq",
-        "description": "Plan, Write and Track all the content that goes on your Social Media and watch it grow to the stars.",
+        "description": [
+            "Plan, Write and Track all the content that goes on your Social Media and watch it grow to the stars."
+        ],
         "price": ""
     },
     {
@@ -50,7 +62,9 @@
         "shortDescription": "New to Notion? Give me 1 Hour!",
         "imageUrl": "/images/notion_course_thumb.png",
         "cta": "https://nas.io/protagonists/products/pzlx",
-        "description": "1 Hour Crash-Course for Notion beginners. You learn everything a regular person would need to use the Notion Templates effectively.",
+        "description": [
+            "1 Hour Crash-Course for Notion beginners. You learn everything a regular person would need to use the Notion Templates effectively."
+        ],
         "price": ""
     }
 ]
