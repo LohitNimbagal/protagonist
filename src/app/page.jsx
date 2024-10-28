@@ -182,7 +182,7 @@ export default function NotionTemplateLanding() {
                       height={300}
                       className="w-auto object-contain rounded-md"
                     />
-                    <CardTitle className='w-full flex items-center justify-between text-xl font-bold text-[#253d30]'>
+                    <CardTitle className='w-full flex flex-col md:flex-row  items-center justify-between text-xl font-bold text-[#253d30]'>
                       {item.title}
                       <div className="flex items-center gap-2">
                         <span className="text-sm text-muted-foreground font-normal line-through">{item.originalPrice ? `${item.originalPrice}` : null}</span>
