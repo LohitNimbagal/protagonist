@@ -69,6 +69,7 @@ const reviews = [
 ];
 
 export default function ReviewsSection() {
+    
     const scrollContainer = useRef(null);
     const [canScrollLeft, setCanScrollLeft] = useState(false);
     const [canScrollRight, setCanScrollRight] = useState(true);

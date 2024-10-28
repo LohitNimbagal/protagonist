@@ -12,22 +12,22 @@ import ReviewsSection from "@/components/reviews-comp"
 
 const cardInfo = [
   {
-    icon: <Video className="w-8 h-8 mx-auto text-[#283f33] mb-2" />,
+    icon: <Video className="w-8 h-8 mx-auto mb-2" />,
     area: 'Content Creation',
     info: 'Track and measure your content creation progress across platforms.'
   },
   {
-    icon: <BookOpen className="w-8 h-8 mx-auto text-[#283f33] mb-2" />,
+    icon: <BookOpen className="w-8 h-8 mx-auto mb-2" />,
     area: 'Academics',
     info: 'Track and measure your content creation progress across platforms.'
   },
   {
-    icon: <DollarSign className="w-8 h-8 mx-auto text-[#283f33] mb-2" />,
+    icon: <DollarSign className="w-8 h-8 mx-auto mb-2" />,
     area: 'Fitness & Finances',
     info: 'Track and measure your content creation progress across platforms.'
   },
   {
-    icon: <CheckSquare className="w-8 h-8 mx-auto text-[#283f33] mb-2" />,
+    icon: <CheckSquare className="w-8 h-8 mx-auto mb-2" />,
     area: 'Tasks, Habits, Journal',
     info: 'Track and measure your content creation progress across platforms.'
   },
@@ -35,17 +35,17 @@ const cardInfo = [
 
 const stats = [
   {
-    icon: <Youtube className="h-8 w-8 md:w-12 md:h-12 text-[#253d30] mb-2" />,
+    icon: <Youtube className="h-8 w-8 md:w-12 md:h-12 mb-2" />,
     stats: '176K+',
     area: 'YouTube Followers',
   },
   {
-    icon: <Instagram className="h-8 w-8 md:w-12 md:h-12 text-[#253d30] mb-2" />,
+    icon: <Instagram className="h-8 w-8 md:w-12 md:h-12 mb-2" />,
     stats: '29K+',
     area: 'Instagram Followers',
   },
   {
-    icon: <GraduationCap className="h-8 w-8 md:w-12 md:h-12 text-[#253d30] mb-2" />,
+    icon: <GraduationCap className="h-8 w-8 md:w-12 md:h-12 mb-2" />,
     stats: '2023',
     area: 'IIT Hyderabad',
   },
@@ -55,18 +55,23 @@ const stats = [
 export default function NotionTemplateLanding() {
 
   return (
-    <div className="flex items-center justify-center text-[#253d30]">
-      <main className="w-full min-h-screen flex flex-col items-center justify-center space-y-2">
+    <div className="flex items-center justify-center">
 
-        <section id="hero" className="bg-white py-12">
+      <main className="w-full min-h-screen flex flex-col items-center justify-center space-y-20">
 
-          <div className="container mx-auto max-w-7xl">
-            <h1 className="text-2xl md:text-3xl font-bold text-center md:pt-2">
-              Become the Main Character of Your Life
-            </h1>
-            <p className="text-lg text-muted-foreground text-center pt-4 mb-6">
-              Welcome to Protagonist Syndrome.
-            </p>
+        <section id="hero" className="flex items-center justify-center xl:h-screen xl:block 2xl:h-auto bg-white py-12">
+
+          <div className="container mx-auto lg:max-w-7xl xl:max-w-[90rem] px-20 xl:space-y-12">
+
+            <div className="space-y-2">
+              <h1 className="text-2xl md:text-3xl font-bold text-center md:pt-2">
+                Become the Main Character of Your Life
+              </h1>
+              <p className="text-lg text-muted-foreground text-center pt-4 mb-6">
+                Welcome to Protagonist Syndrome.
+              </p>
+            </div>
+
             <div className="flex flex-col lg:flex-row">
               <div className="w-full lg:w-1/2 relative p-2 flex items-center">
                 <Image
@@ -113,11 +118,12 @@ export default function NotionTemplateLanding() {
               </div>
             </div>
           </div>
+
         </section>
 
-        <section id="about" className="w-full bg-gray-50 flex flex-col items-center justify-center py-12">
+        <section id="about" className="w-full bg-gray-50 flex flex-col items-center justify-start py-12">
 
-          <div className="container mx-auto px-4 space-y-14 max-w-4xl text-center">
+          <div className="container mx-auto px-4 space-y-14 max-w-4xl text-start">
             <Image
               src={"https://rowan-donut-ffc.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F170a0660-4ab7-4462-a6bc-d2ab83238013%2Fe3796402-4146-4c2a-9ca0-19de0c6217c6%2FScreenshot_2024-10-18_at_9.08.09_AM.png?table=block&id=1231975d-b166-8032-b472-dddf9c7ea40e&spaceId=170a0660-4ab7-4462-a6bc-d2ab83238013&width=1420&userId=&cache=v2"}
               alt="Creator Journey"
@@ -137,15 +143,15 @@ export default function NotionTemplateLanding() {
             </div>
 
             <div className="space-y-8">
-              <h3 className="text-xl md:text-3xl font-bold">
+              <h3 className="text-xl md:text-2xl font-bold">
                 Hey, I am Sankho,
                 <br />
-                <span className="font-semibold">
+                <span className="font-semibold md:text-xl">
                   let me tell you a secret that helped me achieve all this.
                 </span>
                 <br />
               </h3>
-              <h3 className="text-xl md:text-3xl font-bold">
+              <h3 className="text-xl md:text-xl font-bold">
                 It comes from being able to track, measure and organise all the stats of my life.
               </h3>
             </div>
@@ -165,7 +171,7 @@ export default function NotionTemplateLanding() {
               }
             </div>
 
-            <div className="space-y-8 text-xl md:text-3xl">
+            <div className="space-y-8 text-xl md:text-2xl">
               <h3 className=" font-semibold">
                 I use Notion to do all this, it&apos;s an incredible tool but haunting to start from scratch.
               </h3>
