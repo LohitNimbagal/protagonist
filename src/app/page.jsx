@@ -192,10 +192,10 @@ export default function NotionTemplateLanding() {
                   </CardHeader>
 
                   <CardFooter className="mt-auto gap-2 flex items-center justify-between">
+                    <ReadMoreDialog template={item} />
                     <Link href={item.cta} className='w-full'>
                       <Button className="w-full">{item.price ? 'Buy Now' : 'Free Access'}</Button>
                     </Link>
-                    <ReadMoreDialog template={item} />
                   </CardFooter>
                 </Card>
               ))}
