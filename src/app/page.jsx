@@ -59,8 +59,8 @@ export default function NotionTemplateLanding() {
 
         <section id="hero" className="items-center justify-center bg-white py-12">
 
-          <div className="container mx-auto lg:max-w-7xl xl:max-w-[90rem] xl:px-20 xl:space-y-12">
-            <div className="space-y-2">
+          <div className="container mx-auto space-y-4 lg:max-w-7xl xl:max-w-[90rem] xl:px-20 xl:space-y-12">
+            <div className="pb-1">
               <h1 className="text-2xl md:text-3xl font-semibold text-center md:pt-2 font-poppins ">
                 Become the Main Character of Your Life
               </h1>
@@ -69,8 +69,8 @@ export default function NotionTemplateLanding() {
               </p>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-4">
-              <div className="w-full lg:w-1/2 relative p-2 flex items-center">
+            <div className="flex flex-col xl:flex-row gap-4">
+              <div className="w-full xl:w-1/2 relative p-2 flex items-center">
                 <Image
                   src={"https://rowan-donut-ffc.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F170a0660-4ab7-4462-a6bc-d2ab83238013%2Fda856a28-9d2b-4e3f-aaea-f93f6768988c%2Fprotagonist_blueprint_thumb.webp?table=block&id=1231975d-b166-8082-b884-c4494c1df13a&spaceId=170a0660-4ab7-4462-a6bc-d2ab83238013&width=1420&userId=&cache=v2"}
                   alt="Notion Template Preview"
@@ -79,7 +79,7 @@ export default function NotionTemplateLanding() {
                   className="aspect-video object-contain rounded-md w-full h-fit"
                 />
               </div>
-              <div className="w-full lg:w-1/2 p-4 md:p-8 flex flex-col justify-center">
+              <div className="w-full xl:w-1/2 p-4 md:p-8 flex flex-col justify-center">
                 {/* <Badge variant="secondary" className="mb-2 self-start">Special Offer</Badge> */}
                 <h2 className="text-2xl md:text-4xl md:leading-[3rem] font-bold mb-4 tracking-tight">
                   <span className="block">The Ultimate Notion Template to</span>
