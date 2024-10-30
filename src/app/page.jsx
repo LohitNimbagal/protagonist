@@ -122,10 +122,10 @@ export default function NotionTemplateLanding() {
           <div className="container mx-auto px-4 space-y-10 md:space-y-20 max-w-4xl">
 
             <Image
-              src="/images/about.png"
+              src="/images/new-about.jpg"
               alt="Creator Journey"
-              width={800}
-              height={600}
+              width={1920}
+              height={1080}
               className="rounded-lg object-cover w-full h-96"
             />
 
@@ -171,9 +171,9 @@ export default function NotionTemplateLanding() {
                 Enhance your Productivity with our Exclusive Notion Templates
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
               {templates.map((item) => (
-                <Card className='max-w-lg flex flex-col justify-between' key={item.slug} >
+                <Card className='lg:max-w-lg flex flex-col justify-between' key={item.slug} >
                   <CardHeader className="space-y-4 rounded-md">
                     <Image
                       src={item.imageUrl}
@@ -182,14 +182,14 @@ export default function NotionTemplateLanding() {
                       height={300}
                       className="w-auto object-contain rounded-md"
                     />
-                    <CardTitle className='w-full flex flex-col md:flex-row  items-center justify-between text-xl font-bold text-[#253d30]'>
+                    <CardTitle className='w-full flex flex-col sm:flex-row  items-center justify-between text-xl font-bold text-[#253d30]'>
                       {item.title}
                       <div className="flex items-center gap-2">
                         <span className="text-sm text-muted-foreground font-normal line-through">{item.originalPrice ? `${item.originalPrice}` : null}</span>
                         <span className="text-lg font-semibold">{item.price ? `${item.price}` : 'Free'}</span>
                       </div>
                     </CardTitle>
-                    <CardDescription className='text-gray-800'>
+                    <CardDescription className='text-gray-800 text-center sm:text-start'>
                       {item.shortDescription}
                     </CardDescription>
                   </CardHeader>
