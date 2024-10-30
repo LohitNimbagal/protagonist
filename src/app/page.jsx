@@ -119,15 +119,50 @@ export default function NotionTemplateLanding() {
         </section>
 
         <section id='about' className="flex flex-col items-center justify-start py-12 w-full bg-gray-100">
-          <div className="container mx-auto px-4 space-y-10 md:space-y-20 max-w-4xl">
+          <div className="container mx-auto px-4 space-y-10 md:space-y-20 max-w-7xl">
 
-            <Image
-              src="/images/new-about.jpg"
-              alt="Creator Journey"
-              width={1920}
-              height={1080}
-              className="rounded-lg object-cover w-full h-96"
-            />
+            <div className="relative hidden md:block">
+              <Image
+                src="/images/wide-about.png"
+                alt="Creator Journey"
+                width={1920}
+                height={1080}
+                className="rounded-lg object-cover w-full h-96"
+              />
+
+              <div className="text-lg lg:text-xl absolute top-16 left-8 lg:left-14 max-w-xs lg:max-w-sm text-white italic space-y-2 shadow-lg">
+                <h5 className="font-bold text-[#4dd48d] font-lato text-xl lg:text-2xl">Hey, I&apos;m Sankho!</h5>
+                <p className="">
+                  Let me share a secret that&apos;s been key to my success. It&apos;s all about tracking, measuring, and organizing the key stats of my life.
+                </p>
+                <p>
+                  I do it all with Notion, an incredible tool but I know it can be daunting to set up from scratch.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative block md:hidden">
+              <Image
+                src="/images/new-about.jpg"
+                alt="Creator Journey"
+                width={1920}
+                height={1080}
+                className="rounded-lg object-cover w-full h-96"
+              />
+
+              <div className="absolute bottom-3 sm:bottom-6 left-6 sm:left-16 right-6 text-sm md:text-base max-w-xs sm:max-w-md text-white/90 italic shadow-lg">
+                <h5 className="font-bold text-white font-lato text-base sm:text-lg mb-1.5">Hey, I&apos;m Sankho!</h5>
+                <p className="mb-1 leading-4">
+                  Let me share a secret that&apos;s been key to my success. It&apos;s all about tracking, measuring, and organizing the key stats of my life.
+                </p>
+                <p className="leading-4">
+                  I do it all with Notion, an incredible tool but I know it can be daunting to set up from scratch.
+                </p>
+              </div>
+
+            </div>
+
+
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
               <div className="text-center">
@@ -152,12 +187,9 @@ export default function NotionTemplateLanding() {
               </div>
             </div>
 
-            <div className="max-w-3xl mx-auto text-center">
+            <div className="max-w-4xl mx-auto text-center">
               <p className="text-lg mb-6">
-                <span className="font-bold text-[#253d30] font-lato">Hey, I&apos;m Sankho!</span> Let me share a secret that&apos;s been key to my success. It&apos;s all about tracking, measuring, and organizing the key stats of my life. I do it all with Notion, an incredible tool — but I know it can be daunting to set up from scratch.
-              </p>
-              <p className="text-lg mb-6">
-                That&apos;s why I&apos;ve created this collection of my favorite templates, the ones that quite literally run my life. Let them help you, too!
+                That&apos;s why I&apos;ve created this collection of my favorite templates, the ones that quite literally run my life.
               </p>
             </div>
           </div>
